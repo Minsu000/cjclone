@@ -50,12 +50,12 @@
 #header > .header_wrap > .header_inner > .menu > #navi
     {
         position: absolute;
-        width: 900px;
+        width: 600px;
         height: 100px;
         background-color: rgb(45, 168, 101);
         display: flex;
         flex-direction: row;
-        left: 600px;
+        left: 200px;
     }
 #navi > .cat
     {
@@ -79,27 +79,27 @@
     {
         display: block;
         background-color: #117488;
-        position: relative;
     }
 #navi > .cat > .submenu
     {
         background-color: #fff;
-        display: none;    
+        display: none;            
     }
 #navi > .cat > .submenu > li
     {
-        width: 150px;
-        height: 50px;    
+        width: 10px;
+        height: 10px;    
+        margin: 10px 10px;
     }
 #navi > .cat > .submenu > li > a
     {
-        position: absolute;
         line-height: 40px;
         font-size: 14px;
         font-weight: bold;
-        text-align: center;
-        width: 50px;
-        height: 20px;       
+        width: 10px;
+        height: 20px;    
+        margin: 10px 10px;
+        z-index: 99999;
     }
 
 #main
@@ -184,4 +184,34 @@
     width: 1200px;
     background-color: #333;
     height: 100px;
+}
+
+
+
+@media all and (max-width:768px) {
+    
+    #header > .header_wrap > .header_inner > .menu > #navi
+    {
+        display: none;    
+    }
+
+    #main > .info_wrap
+    {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+    }
+
+    #main > .info_wrap > .info
+    {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%/2);
+    }
+}
+
+
+@media all and (max-width:320px) {
+    
+
 }
