@@ -61,11 +61,12 @@ body > header
         flex-direction: row;
         left: 600px;
     }
-#navi > li
+#navi > .cat
     {
         width: calc(100% / 6);
+        position: relative;
     }
-#navi>li>a
+#navi> .cat > a
     {
         line-height: 40px;
         font-size: 16px;
@@ -73,27 +74,35 @@ body > header
         text-align: center;
         background-color: #333;
         color: #fff;
+        margin: 30px auto;
+        text-decoration: none;
+        position: absolute;
+        left: 30px;
     }
-#navi >li:hover > .submenu
+#navi > .cat:hover > .submenu
     {
         display: block;
         background-color: #117488;
-    }
-#navi > li > .submenu
-    {
         position: relative;
-        background-color: #fff;
-        z-index: 100;
-        display: none;
     }
-#navi > li > .submenu > li > a
+#navi > .cat > .submenu
     {
+        background-color: #fff;
+        display: none;    
+    }
+#navi > .cat > .submenu > li
+    {
+        width: 150px;
+        height: 200px;
+        margin-top: 200px;
+    }
+#navi > .cat > .submenu > li > a
+    {
+        position: absolute;
         line-height: 40px;
         font-size: 14px;
         font-weight: bold;
         text-align: center;
-    }
-#navi > li > .submenu >li >a:hover
-    {
-        background-color: cornflowerblue;
+        width: 50px;
+        height: 20px;       
     }

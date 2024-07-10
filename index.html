@@ -8,9 +8,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
     <link rel="manifest" href="images/icon/site.webmanifest">
     <link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">    
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <title>cjclone</title>
 </head>
 <body>
@@ -20,8 +24,8 @@
             <h1><a href="#"><img src="images/CJ_logo.svg" alt="CJ logo"></a></h1>
                 <nav class="menu">
                     <ul id="navi">
-                        <li><a href="#">소개</a></li>
-                        <li><a href="#">포인트/카드</a>
+                        <li class="cat"><a href="#">소개</a></li>
+                        <li class="cat"><a href="#">포인트/카드</a>
                             <ul class="submenu">
                                 <li><a href="#">포인트 적립/사용</a></li>
                                 <li><a href="#">제휴 브랜드</a></li>
@@ -33,15 +37,15 @@
                                 <li><a href="#">제휴 신용카드 안내</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">이벤트/쿠폰</a>
+                        <li class="cat"><a href="#">이벤트/쿠폰</a>
                             <ul class="submenu">
                                 <li><a href="#">이벤트</a></li>
                                 <li><a href="#">쿠폰</a></li>
                                 <li><a href="#">득템프</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">ONE콘</a></li>
-                        <li><a href="#">기프트카드</a>
+                        <li class="cat"><a href="#">ONE콘</a></li>
+                        <li class="cat"><a href="#">기프트카드</a>
                             <ul class="submenu">
                                 <li><a href="#">나의 기프트카드</a></li>
                                 <li><a href="#">기프트카드 안내</a></li>
@@ -50,7 +54,7 @@
                                 <li><a href="#">선물함</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">나의 ONE</a>
+                        <li class="cat"><a href="#">나의 ONE</a>
                             <ul class="submenu">
                                 <li><a href="#">나의 ONE</a></li>
                                 <li><a href="#">나의 포인트</a></li>
@@ -61,13 +65,33 @@
                                 <li><a href="#">나의 상담내역</a></li>
                             </ul>
                         </li>
+                        <div class="btn">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </div>
                     </ul>
                 </ul>
             </nav>              
         </div>
     </div>
 </header>
-
+<div class="swipe_wrap">
+    <div class="swiper pics">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>  
+</div>
 
 
 
@@ -80,6 +104,6 @@
 
 
 
-   
+
 </body>
 </html>
