@@ -44,63 +44,57 @@
         height: 50px;
         background-color: aqua;
         display: flex;
-        flex-direction: row;
+        flex-direction: row;      
 
     }
-#header > .header_wrap > .header_inner > .menu > #navi
-    {
-        position: absolute;
-        width: 600px;
+    .menu{
+        width: 950px;
         height: 100px;
-        background-color: rgb(45, 168, 101);
-        display: flex;
-        flex-direction: row;
-        left: 200px;
-    }
-#navi > .cat
-    {
-        width: calc(100% / 6);
         position: relative;
+
     }
-#navi> .cat > a
-    {
+    .navi{
+        position: absolute;
+        left: 400px;
+        width: 700px;
+        display: flex;        
+        /* justify-content: space-between; */
+        margin-top: 30px;
+        /* background-color: #fff; */
+    }
+    .navi > li{
+        width: calc(100% / 4);
+    }
+    .navi>li>a{
         line-height: 40px;
         font-size: 16px;
         font-weight: bold;
         text-align: center;
         background-color: #333;
         color: #fff;
-        margin: 30px auto;
-        text-decoration: none;
-        position: absolute;
-        left: 30px;
     }
-#navi > .cat:hover > .submenu
-    {
-        display: block;
+    .navi>li:hover >a{
         background-color: #117488;
     }
-#navi > .cat > .submenu
-    {
+    /* .navi>li:hover .submenu{
+        display: block;
+    } */
+    .submenu{
+        position: relative;
         background-color: #fff;
-        display: none;            
+        z-index: 10;
+        display: none;
     }
-#navi > .cat > .submenu > li
-    {
-        width: 10px;
-        height: 10px;    
-        margin: 10px 10px;
-    }
-#navi > .cat > .submenu > li > a
-    {
+    .submenu>li>a{
         line-height: 40px;
         font-size: 14px;
         font-weight: bold;
-        width: 10px;
-        height: 20px;    
-        margin: 10px 10px;
-        z-index: 99999;
+        text-align: center;
     }
+    .submenu>li>a:hover{
+        background-color: cornflowerblue;
+    }
+
 
 #main
 {
