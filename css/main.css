@@ -141,3 +141,12 @@ h1{position:absolute;left:0;top:68px;}
                                                           opacity:0;background:#f2f2f2;z-index:2;transition:all 0.5s linear 0s;}
     .content3 > section > div > ul > li:nth-of-type(3n):hover p{left:-100%;opacity:1;}
 	
+			/* footer */
+
+	body > footer{padding:30px 0 20px;text-align:center;background:#222;width: 1400px;
+	height: 150px; margin:0 auto; position: relative;}
+    .foot_inner{width:1400px;margin:0 auto; position: absolute; top: 8px;}
+    .foot_inner > div > p{line-height:30px;padding-bottom:0px;}
+    .foot_inner > div > address{line-height:20px;}
+    .foot_inner > div > address > span{padding-top:10px; color: white;}
+    .foot_inner > div > address > p{padding-top:5px; color: white;}
