@@ -9,34 +9,33 @@ body{font-size:14px;font-family:nanum;}
 a{text-decoration:none;}
 
 body > header
-{position:relative;width:1400px; height: 120px;margin:0 auto;
+{position:relative;max-width:1400px; width: 100%; height: 120px;margin:0 auto;
 background:#222;}
 
 .header_wrap
-{position:relative;margin:0 auto;width:1400px; height:120px;
+{position:relative;margin:0 auto;width:100%; height:120px;
 display: flex; justify-content: center;}
 
 #inner
-{position:absolute;display:block;width:1060px;height:120px;
+{position:absolute;display:block;width:76%;height:120px;
 }
 		
 /* 로고 */
 h1{position:absolute;left:0;top:68px;}
 	
 	/* 탑메뉴 */
-	.topMenu{position:absolute;right:0;top:12px;}
-	.topMenu > dd{float:left;box-sizing:border-box;}
-	.topMenu > dd a{color:#999;font-size:12px;}
+	.topMenu{position:absolute;right:-150px;top:12px;width: 50%;display: flex;
+	flex-wrap: wrap;}
+	.topMenu > dd{float:left;width: 80px; padding-left:0;}
+	.topMenu > dd a{color:#999;font-size:12px; width: 80px;}
 	.topMenu > dd:first-child, .topMenu > dd:nth-child(2), .topMenu > dd:nth-child(3),
 	.topMenu > dd:nth-child(4), .topMenu > dd:nth-child(5), .topMenu > dd:nth-child(6){padding-left:15px;}
 	
 	.topMenu > dd a:hover, .topMenu > dd a:focus{color:#fff;}
 	
 	/* 탑메뉴 고객센터 */
-	.topMenu > dd:nth-of-type(5){position:relative;top:0;left:0;}
+	.topMenu > dd:nth-of-type(5){position:relative;top:-1.517px;left:-8px;}
 	.topMenu > dd:nth-of-type(5) > a{display:inline-block;width:84px;padding-left:4px;padding-bottom:5px;height:20px;line-height:20px;}
-	.topMenu > dd:nth-of-type(5) > a:after{content:"";display:block;position:absolute;width:7px;height:7px;right:20px;top:8px;
-							background:url(../images/ico_gnb_updown.png) no-repeat top center;background-size:100%;}
 	.topMenu > dd > ul{position:absolute;display:none;width:90px;right:0;top:20px;
 					   border:1px solid #999;border-radius:5px;box-sizing:border-box;border-top:none;}
 	.topMenu > dd > ul li{background-color: #222; padding:0px 7px;}
@@ -44,38 +43,36 @@ h1{position:absolute;left:0;top:68px;}
 	.topMenu > dd > ul li a{font-size:11px;}
 		
 	/* 탑메뉴 카드등록 */
-	.topMenu > dd:last-child > a{display:block;padding:0px 10px;border-radius:3px;line-height:24px;background:#2d2d2d;}
-	
-	/* 모바일 전체메뉴 */
-	.header_wrap > div:last-child{display:none;}
+	.topMenu > dd:last-child > a{display:block;padding-left: 15px;border-radius:3px;line-height:24px;background:#2d2d2d;
+								position: relative; top: -4px; right: 10px;}
 	
 	/* 주메뉴1 */
 	#nav > .navi
-	{position:absolute;top:73px;left:110px;
-	 display: flex;margin-left: 40px;}
+	{position:absolute;top:73px;left:160px;
+	 display: flex; width: 80%;}
 	#nav > .navi > li
-	{margin-left:50px;width: 90px;}
+	{width: calc(100%/6);}
 	#nav > .navi > li:hover
-	{width: 90px;margin-left:50px;}
-	#nav > .navi > li:nth-child(5)
-	{margin-left: 13px;}
-	#nav > .navi > li:nth-child(6)
-	{margin-left: 35px;}
+	{width: calc(100%/6);}	
+	#nav > .navi > li:nth-child(5),#nav > .navi > li:nth-child(6)
+	{
+	position: relative; left: -30px;
+	}
 	#nav > ul > li a
 	{color:#fff;font-weight:600;	  
-	transition:color 0.5s ease 0s; width: 83px;}
+	transition:color 0.5s ease 0s; width: 83px;font-size: 14px;}
 	#nav > .navi > li a:hover
 	{color:#f4790b; width: 83px;}
 	#nav > ul > li > .submenu
 	{display:none;position:relative;left:0;padding:0;
-	background-color: aqua; width: 150px;z-index: 999;}
+	background-color: rgb(97, 102, 102);border: 1px solid rgb(97, 102, 102);
+	width: 130px;z-index: 999;}
 	#nav > ul > li > .submenu > li
 	{line-height:30px;}
 	#nav > ul > li > .submenu > li > a
 	{font-size:12px; line-height: 40px;
-     font-size: 16px; font-weight: bold;
      text-align: center; text-decoration: none;
-     color: black;
+     color: rgb(255, 255, 255);
     }
 	
 	/* 주메뉴2 */
@@ -87,11 +84,11 @@ h1{position:absolute;left:0;top:68px;}
 	background:url(../images/btn_gnb_search.png) no-repeat;}
 	
 	#main
-	{display: block;}
+	{display: block; max-width: 1400px; width: 100%;margin: 0 auto;}
 	#main > .swiper_wrap
-	{width: 1400px; margin: 0 auto;}
+	{width: 100%; margin: 0 auto;}
 	#main > .swiper_wrap > .swiper.pics
-	{width: 1400px;}
+	{width: 100%;}
 	#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > img
 	{width: 100%;}	
 
@@ -150,3 +147,20 @@ h1{position:absolute;left:0;top:68px;}
     .foot_inner > div > address{line-height:20px;}
     .foot_inner > div > address > span{padding-top:10px; color: white;}
     .foot_inner > div > address > p{padding-top:5px; color: white;}
+
+
+	@media all and (max-width:768px) {
+
+		#inner > .topMenu{display: none;}
+		#nav{display: none;}
+		#inner{position: relative;}
+		#inner > h1 {
+			top: 50%;
+			left: 45%;
+			transform: translate(-50%,-50%);
+			position: absolute;
+		}
+		#container > .content3{display: none;}
+	
+	}
+	
