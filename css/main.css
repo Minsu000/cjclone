@@ -26,7 +26,7 @@ h1{position:relative;left:0;top:68px;}
 	/* 탑메뉴 */
 	.topMenu{position:absolute;right:-150px;top:12px;width: 50%;display: flex;
 	flex-wrap: wrap;}
-	.topMenu > dd{float:left;width: 80px; padding-left:0;}
+	.topMenu > dd{width: 80px;}
 	.topMenu > dd a{color:#999;font-size:12px; width: 80px;}
 	.topMenu > dd:first-child, .topMenu > dd:nth-child(2), .topMenu > dd:nth-child(3),
 	.topMenu > dd:nth-child(4), .topMenu > dd:nth-child(5), .topMenu > dd:nth-child(6){padding-left:15px;}
@@ -137,7 +137,7 @@ h1{position:relative;left:0;top:68px;}
 	
 			/* footer */
 
-	body > footer{padding:30px 0 20px;text-align:center;background:#222;
+	body > footer{text-align:center;background:#222;
 		max-width: 1400px; width: 100%;
 	height: 150px; margin:0 auto; position: relative;}
     .foot_inner{width:100%;margin:0 auto; position: absolute; top: 8px;}
@@ -185,7 +185,60 @@ h1{position:relative;left:0;top:68px;}
 		footer
 		{
 			position: relative;top: 400px;
-		}
-	
+		}	
 	}
-	
+	@media all and (max-width:586px)
+	{
+		#container > .content1 > ul{
+			width: 180px;
+		}
+		#container > .content2 > ul
+		{
+			width: 200px; height: 400px;
+		}
+	}
+
+	@media all and (max-width:503px)
+	{
+		#container > .content2 > ul
+		{
+			width: 180px; height: 350px;
+		}
+		footer
+		{
+			position: relative;top: 260px;
+		}	
+
+	}
+	@media all and (max-width:447px)
+	{
+		#container > .content1 > ul{
+			width: 140px;
+		}		
+		#container > .content2 > ul
+		{
+			width: 150px; height: 300px;
+		}
+		body > footer{text-align:center;background:#222;
+			width: 100%; position: relative;top: 100px; height: 50px;}
+		
+		footer > .foot_inner > div > address
+		{display: none;}
+
+	}
+	@media all and (max-width:385px)
+	{
+		#container > .content1 > ul{
+			width: 120px;
+		}		
+		#container > .content2 > ul
+		{
+			width: 120px; height: 200px;
+		}
+	}
+
+	@media all and (max-width:319px)
+	{
+		
+
+	}
