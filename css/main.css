@@ -122,3 +122,22 @@ h1{position:absolute;left:0;top:68px;}
 		box-shadow: #3743cf;
 		
 	}
+	.content3{width: 1400px; align-items: center;}
+	.content3 > h2{font-size:35px;font-weight:bold;text-align:center;}
+	.content3 > section{width:96%;margin:0 auto;}
+	.content3 > section > div{width:88%;margin-top:100px;margin-left:10%;}
+	.content3 > section > div > ul > li{text-align:center;position:relative;display:inline-block;overflow:hidden;width:175px;height:80px;}
+    .content3 > section > div > ul > li:hover{overflow:visible;}
+    .content3 > section > div > ul > li > a{display:block;width:175px;height:80px;box-sizing:border-box;overflow:hidden;padding-top:20px;border:1px solid #fff;}
+    
+    .content3 > section > div > ul > li:hover > a{border:1px solid #ee6900;box-sizing:border-box;width:175px;height:80px;}
+
+    .content3 > section > div > ul > li p{position:absolute;top:0;left:50%;width:175px;height:80px;text-align:center;padding-top:20px;box-sizing:border-box;
+                                          opacity:0;background:#f2f2f2;z-index:2;transition:all 0.5s linear 0s;}
+    .content3 > section > div > ul > li:hover p{left:100%;opacity:1;}
+    .content3 > section > div > ul > li > p > span{font-weight:bold;}
+    .content3 > section > div > ul > li:nth-of-type(3n) p{right:50%;position:absolute;top:0;left:-50%;width:175px;height:80px;text-align:center;
+                                                          padding-top:20px;box-sizing:border-box;
+                                                          opacity:0;background:#f2f2f2;z-index:2;transition:all 0.5s linear 0s;}
+    .content3 > section > div > ul > li:nth-of-type(3n):hover p{left:-100%;opacity:1;}
+	
