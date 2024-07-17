@@ -43,3 +43,15 @@
     border-radius: 0 0 30px 30px;
     cursor: pointer;
   }
+
+  .top-botton{
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    z-index: 99999; /*제일 위에 있어야 함*/
+    display: flex; /*부모한테 줘야함*/
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
