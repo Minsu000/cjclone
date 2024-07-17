@@ -5,7 +5,42 @@ $(document).ready(function(){
   }).mouseout(function(){
       $(this).find(".submenu").stop().slideUp()
   })
-})
+
+  $(".m_menu").click(function(){
+		$(".Mobile_wrap").css({"display":"block"});
+	});
+		//닫기
+	$(".menu_close").click(function(){
+		$(".Mobile_wrap").css({"display":"none"});
+	});
+
+		//하위메뉴열기-고객센터
+	$("div.Mobile_wrap > div > ul > li:nth-child(5) > a").click(function(){
+		$("div.Mobile_wrap > div > ul > li:nth-child(5) > ul").toggleClass("on_M");
+
+	});
+	
+		//하위메뉴열기-포인트카드
+	$("div.Mobile_wrap > div > ul > li:nth-child(8) > a").click(function(){
+		$("div.Mobile_wrap > div > ul > li:nth-child(8) > ul").toggleClass("on_M");
+
+	});
+		//하위메뉴열기-이벤트/쿠폰
+	$("div.Mobile_wrap > div > ul > li:nth-child(9) > a").click(function(){
+		$("div.Mobile_wrap > div > ul > li:nth-child(9) > ul").toggleClass("on_M");
+
+	});
+		//하위메뉴열기-기프트카드
+	$("div.Mobile_wrap > div > ul > li:nth-child(11) > a").click(function(){
+		$("div.Mobile_wrap > div > ul > li:nth-child(11) > ul").toggleClass("on_M");
+
+	});
+		//하위메뉴열기-나의 ONE
+	$("div.Mobile_wrap > div > ul > li:nth-child(12) > a").click(function(){
+		$("div.Mobile_wrap > div > ul > li:nth-child(12) > ul").toggleClass("on_M");
+
+	});
+});
 
 window.onload = function(){
   var swiper = new Swiper(".pics", {
@@ -37,7 +72,7 @@ window.onload = function(){
       else{
         body.style.overflow = "auto";
       }
-    }
+    };
 
     
     
@@ -69,9 +104,6 @@ window.onload = function(){
         });
       }
     });
-
-
-
 }
 
 
