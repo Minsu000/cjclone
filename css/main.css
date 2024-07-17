@@ -110,15 +110,10 @@ h1{position:relative;left:0;top:68px;}
 	justify-content: center; align-items: center;
 	flex-direction: column;}
 	#container > .content1
-	{display: flex; flex-wrap: wrap;justify-content: center;width:100%;height: 180px;}
+	{display: flex; flex-wrap: wrap;justify-content: center;width:100%;height: 180px;position: relative;}
 	#container > .content1 > ul
-	{
-		margin: 0px 20px;
-		text-align: center;
-		font-size: 13px;
-		font-weight: bold;
-		width: 150px;
-		line-height: 20px;
+	{margin: 0px 30px;text-align: center;font-size: 13px;
+	font-weight: bold;	width: 180px;	line-height: 20px;
 	}
 
 	#container > .content2
@@ -171,10 +166,24 @@ h1{position:relative;left:0;top:68px;}
 			.topMenu > dd a{font-size: 10px;}
 			.topMenu > dd:first-child, .topMenu > dd:nth-child(2), .topMenu > dd:nth-child(3),
 			.topMenu > dd:nth-child(4), .topMenu > dd:nth-child(5), .topMenu > dd:nth-child(6){padding-left:5px;}
+			#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
+			{		
+				top: -300px;		
+			}
+		
 		}
 
 
+	@media all and (max-width:960px)
+	{
+		#container > .content1
+		{position: relative; top: -100px;}
+		#container > .content1 > ul
+		{margin: 0px 20px;font-size: 13px;
+		width: 150px;	line-height: 20px;
+		}
 
+	}
 	@media all and (max-width:768px) {
 
 		#inner > .topMenu{display: none;}
@@ -190,21 +199,31 @@ h1{position:relative;left:0;top:68px;}
 			width: 140px;
 			height: 40px;
 		}
+		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
+		{font-size: 18px; line-height: 40px; top: -240px; left:50px}
+		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > img
+		{height: 250px;}	
+		#word2 > li:nth-child(3)
+		{font-size: 12px; color: #000000;}
+		#container > .content1
+		{
+			position: relative;top: -150px;
+		}
 		#container > .content1 > ul{
 			width: 230px;
 
 		}
 		#container > .content2
-		{position: relative; top: 100px;}
+		{position: relative; top: 0px;}
 		#container > .content2 > ul
 		{
-			width: 250px; height: 400px;
+			width: 250px; height: 340px;
 		}
 		#container > .content3{display: none;}
 		
 		footer
 		{
-			position: relative;top: 400px;
+			position: relative;top: 180px;
 		}	
 	}
 	@media all and (max-width:586px)
@@ -259,6 +278,7 @@ h1{position:relative;left:0;top:68px;}
 
 	@media all and (max-width:319px)
 	{
-		
+		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
+		{display: none;}
 
 	}
