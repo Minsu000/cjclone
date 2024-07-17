@@ -81,10 +81,24 @@ h1{position:relative;left:0;top:68px;}
 	#main > .swiper_wrap
 	{width: 100%; margin: 0 auto;}
 	#main > .swiper_wrap > .swiper.pics
-	{width: 100%;}
+	{width: 100%;}	
+	#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide
+	{
+		width: 100%; height: 400px;
+
+	}
 	#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > img
 	{width: 100%;}	
-
+	#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
+	{
+		position: relative;
+		background-color: #ee6900;
+		display: block;
+		width: 500px;
+		top: -400px;
+		left: 80px;
+		font-size: 40px;
+	}
 	#container
 	{display: flex; max-width: 1400px; width: 100%; margin: 40px auto;
 	justify-content: center; align-items: center;
