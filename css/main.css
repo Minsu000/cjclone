@@ -241,7 +241,7 @@ h1{position:relative;left:0;top:68px;}
 		.menu_close{cursor:pointer;position:absolute;left:285px;top:65px;width:37px;height:37px;text-indent:-9999px;background:url(../images/btn_close.png) no-repeat -20px 0;}
 	
 		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
-		{font-size: 18px; line-height: 40px; top: -240px; left:50px}
+		{font-size: 18px; line-height: 40px; top: -240px; left:20px}
 		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > img
 		{height: 250px;}	
 		#word2 > li:nth-child(3)
@@ -258,13 +258,13 @@ h1{position:relative;left:0;top:68px;}
 		{position: relative; top: 0px;}
 		#container > .content2 > ul
 		{
-			width: 250px; height: 340px;
+			width: 250px; height: 280px;
 		}
 		#container > .content3{display: none;}
 		
 		footer
 		{
-			position: relative;top: 180px;
+			position: relative;top: 0px;
 		}	
 	}
 	@media all and (max-width:586px)
@@ -274,8 +274,12 @@ h1{position:relative;left:0;top:68px;}
 		}
 		#container > .content2 > ul
 		{
-			width: 200px; height: 400px;
+			width: 200px; height: 260px;
 		}
+		footer
+		{
+			position: relative;top: -90px;
+		}	
 	}
 
 	@media all and (max-width:503px)
@@ -286,7 +290,7 @@ h1{position:relative;left:0;top:68px;}
 		}
 		footer
 		{
-			position: relative;top: 260px;
+			position: relative;top: 150px;
 		}	
 
 	}
@@ -297,10 +301,10 @@ h1{position:relative;left:0;top:68px;}
 		}		
 		#container > .content2 > ul
 		{
-			width: 150px; height: 300px;
+			width: 150px; height: 220px; margin: 0px 10px;
 		}
 		body > footer{text-align:center;background:#222;
-			width: 100%; position: relative;top: 100px; height: 50px;}
+			width: 100%; position: relative;top: -180px; height: 50px;}
 		
 		footer > .foot_inner > div > address
 		{display: none;}
@@ -319,7 +323,21 @@ h1{position:relative;left:0;top:68px;}
 
 	@media all and (max-width:319px)
 	{
+		#inner > h1 > a > img 
+		{	width: 100px;height: 30px;}
 		#main > .swiper_wrap > .swiper.pics > .swiper-wrapper > .swiper-slide > .wordgroup
 		{display: none;}
-
+		#container > .content1 > ul:nth-child(1) > a img,
+		#container > .content1 > ul:nth-child(3) > a img,
+		#container > .content1 > ul:nth-child(4) > a img
+		{
+			position: relative;
+			left: -15px;
+		}
+		#container > .content2 > ul
+		{width: 200px; height: 200px;position: relative;top: 370px; margin: 20px 0px;}
+		body > footer
+		{
+			position: relative;top: 780px;
+		}	
 	}
