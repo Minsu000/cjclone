@@ -356,10 +356,10 @@ h1{position:relative;left:0;top:68px;}
 			top: 40px;
 		}
 		#container > .content2 > ul
-		{width: 200px; height: 200px;position: relative;top: 370px; margin: 20px 0px;}
+		{width: 200px; height: 250px;position: relative;top: 370px; margin: 20px 0px;}
 		body > footer
 		{
-			position: relative;top: 820px;
+			position: relative;top: 1120px;
 		}	
 		#copyright 
 		{
